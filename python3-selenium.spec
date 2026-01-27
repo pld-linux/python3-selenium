@@ -2,16 +2,16 @@
 Summary:	Python bindings for Selenium
 Summary(pl.UTF-8):	Wiązania Pythona do Selenium
 Name:		python3-%{module}
-Version:	4.39.0
+Version:	4.40.0
 Release:	1
 License:	Apache v2.0
 Group:		Development/Languages/Python
 #Source0Download: https://pypi.org/simple/selenium/
 Source0:	https://files.pythonhosted.org/packages/source/s/selenium/%{module}-%{version}.tar.gz
-# Source0-md5:	334b7d61d8bc8c8937a001fb2f503674
+# Source0-md5:	a60ea984cd3eefdff1e1b2e812dbb2b9
 # cargo vendor-filterer --platform='*-unknown-linux-*' --tier=2
 Source1:	selenium-%{version}-vendor.tar.xz
-# Source1-md5:	c537a42e1cb8981e9d40209a3e0937c3
+# Source1-md5:	1916109dba2f34659c77808ba4686d81
 URL:		https://pypi.org/project/selenium/
 BuildRequires:	python3-modules >= 1:3.10
 BuildRequires:	python3-setuptools
