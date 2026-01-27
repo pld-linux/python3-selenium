@@ -12,6 +12,7 @@ Source0:	https://files.pythonhosted.org/packages/source/s/selenium/%{module}-%{v
 # cargo vendor-filterer --platform='*-unknown-linux-*' --tier=2
 Source1:	selenium-%{version}-vendor.tar.xz
 # Source1-md5:	1916109dba2f34659c77808ba4686d81
+Patch0:		selenium-dependencies.patch
 URL:		https://pypi.org/project/selenium/
 BuildRequires:	python3-modules >= 1:3.10
 BuildRequires:	python3-setuptools
@@ -44,6 +45,7 @@ poziomu Pythona.
 
 %prep
 %setup -q -n %{module}-%{version} -a1
+%patch -P0 -p1
 
 # use our offline registry
 export CARGO_HOME="$(pwd)/.cargo"
